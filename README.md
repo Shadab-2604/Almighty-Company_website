@@ -1,7 +1,4 @@
-# Almighty-Company_website
-Certainly, here's a README file template for the "Almighty-Company_website" GitHub repository:
 
----
 
 # Almighty Company Website
 
