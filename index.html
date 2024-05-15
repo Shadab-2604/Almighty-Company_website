@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: 'Poppins', sans-serif;">ALMIGHTY VERSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/uparka logo.png" >
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            margin: 0%;
+            padding-left: 0%;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px rgb(255, 255, 255) solid ;
+            height: 65px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            position:relative;
+           
+
+        }
+        .nav-ul-left{
+            display: flex;
+            
+        }
+        .nav-ul-right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 10% ;
+        }
+        .nav-ul-right a{
+            list-style: none;
+            text-decoration: none;
+            margin-left: 5%;
+            color:#007272;
+            
+        }
+        .nav-ul-right a :hover{
+            border-bottom: #007272 solid 2px;
+            color:#00727284;
+        }
+        .nav-ul-searchbar{
+            height: 30px;
+            margin-left: 5%;
+           border: 1px solid #007272  ;
+           border-radius: 10px;
+           padding-left: 10px;
+           color: #042727;
+           outline: none;
+        }
+        .nav-logo{
+            height: 7%;
+            width: 7%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 2%;
+            
+        }
+        .nav-name{
+            font-size: 150%;
+            font-weight: bold;
+            color: #042727;
+        }
+        footer{
+            margin: 0%;
+            padding-left: 0%;
+            
+            
+            margin-bottom: 0%;
+            display: flex;
+            width: 100%;
+            height: 65px;
+           background-color: white;
+            align-items: center;
+            justify-content: space-between;
+           position: fixed;
+            bottom: 0;
+              
+        }
+        .footer-left-ul img{
+            height: 5%;
+            width: 5%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 2%;
+            border-radius: 25px;
+            
+        }
+        .footer-left-ul{
+            display: flex;
+        }
+        .footer-left-ul .p2{
+            border-left: rgb(0, 0, 0) solid 1px;
+            margin-left: 2% ;
+            padding-left: 2%;
+            color: rgba(0, 0, 0, 0.616);
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .footer-left-ul .p1{
+            color: #042727;
+            font-size: 150%;
+        }
+        .footer-right-ul{
+            display: flex;
+           margin-right: 3%;
+          
+            
+        }
+        .footer-right-ul img{
+            height: 30px;
+            width: 30px;
+           margin-left: 20px;
+           
+        }
+        .footer-right-ul div :hover{
+            transform: scale(1.2);
+            transition: ease 60ms;
+        }
+        
+        .section1 img{
+            position: relative;
+            width: 100%;
+        }
+        .section1 .section1-div1{
+            position: absolute;
+            top: 15%;
+            right: 38% ;
+            width: 60%;
+        }
+        .section1 .section1-div1 .p1{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #042727;
+            margin: 0%;
+            padding: 0%;
+        }
+        .section1 .section1-div1 .p2{
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.614);
+            margin-top: 3%;
+
+        }
+        .colour1{
+      color: #007272 ;
+    }
+
+    #element{
+      color: #007272;
+      font-size: 2rem;
+    }
+    .hr1{
+        width: 95%;
+        margin-top: 2%;
+        position: relative;
+    }
+    .Recommended{
+        position: absolute;
+        top: 71%;
+        right: 41%;
+        font-size: 2rem;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.785);
+        padding-left:2% ;
+        padding-right:2% ;
+       
+    }
+    .service{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10% ;
+        padding-right: 10%;
+        margin-top: 5%;
+    }
+    .service .container{
+        display: flex;
+        flex-direction: column;
+        
+        height: 500px;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.429);
+        border-radius: 5px;
+    }
+    
+    .service .container img{
+        width: 300px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .service .container h1{
+        color: #011a1a ;
+        margin: 0%;
+        padding-left: 5%;
+        padding-top: 3%;
+       
+        
+    }
+    .service .container p{
+        width: 300px;
+        padding-left: 15px;
+        padding-top: 2%;
+        font-size: 14px;
+        margin: 0%;
+        color: #011a1ab4 ;
+        
+    }
+    .service .container button{
+       margin-top: 15px;
+        margin-left: 15px;
+        border: none;
+        background-color: #011a1a;
+        color: white;
+        border-radius: 10px;
+        height: 25px;
+    }
+     .container a button:hover{
+        background-color: rgba(3, 69, 69, 0.645);
+        transform: scale(1.1);
+        transition: ease 60ms;
+    }
+    .hr2{
+        width: 95%;
+        margin-top: 6%;
+        position: relative;
+    }
+    .Recommended-2{
+        position: absolute;
+        top: 161%;
+        right: 41%;
+        font-size: 2rem;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.785);
+        padding-left:2% ;
+        padding-right:2% ;
+    }
+    .abouts{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-bottom: 0%;
+    
+    }
+    .abouts-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: #d4d4d4;
+     width: 600px;
+     height: 450px;
+     border-radius: 10px;
+     
+    }
+    .abouts-div img{
+        height: 200px;
+        width: 200px;
+        padding-top: 5%;
+
+    }
+    .abouts  .abouts-div p{
+        margin: 5%;
+        font-size:16px;
+        color: #046363c9;
+    }
+    .abouts-2{
+     display: flex;
+     justify-content: space-between;
+     padding: 5%;
+     margin-bottom: 5%;
+
+    }
+    .abouts-div-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: #d4d4d4;
+     width: 600px;
+     height: 450px;
+     border-radius: 10px;
+     
+    }
+    .abouts-div-2 img{
+        height: 200px;
+        width: 200px;
+        padding-top: 5%;
+
+    }
+    .abouts-2  .abouts-div-2 p{
+        margin: 5%;
+        font-size:16px;
+        color: #046363c9;
+    }
+    .a-abouts{
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-ul-left">
+            <img class="nav-logo" src="images/nav-logo.png" alt="">
+            <p class="nav-name">ALMIGHTY VERSE</p>
+        </ul>
+        <ul class="nav-ul-right">
+            
+            <a href="index.html"><li>HOME</li></a>
+            <a href="contact.html"><li>CONTACT</li></a>
+            <a href="about_us.html"><li>ABOUT</li></a>
+            <a href="login.html"><li>LOGIN/SIGNUP</li></a>
+            <input class="nav-ul-searchbar" type="text" placeholder="SEARCH">
+        </ul>
+    </nav>
+
+    <section class="section1">
+        
+        <img src="/images/bg.png" alt="">
+        <div class="section1-div1">
+            <p class="p1">Welcome To <span class="colour1">Almighty Verse</span> </p>
+            <span id="element"></span>
+             <div class="p2"> In the world of technology and code, Almighty Verse reigns supreme,<br>
+                where innovation knows no bounds and nothing is impossible.<br>
+                In the digital domain,we craft webpages that transcend imagination,<br>
+                 deliver daily tech wisdom through captivating videos,<br>
+                scrutinize products with precision, empower the art of hacking,<br>
+                 and conquer hackathons with unmatched fervor.Almighty Verse, <br>
+                 where limitless possibilities meet technology's finest verse.</div>
+        </div>
+        
+    </section>
+
+    <hr class="hr1">
+    <span class="Recommended"> Our Services </span>
+
+    <section class="service">
+       
+            <div class="container">
+                <img src="/images/a-video.png" alt="">
+                <div class="content">
+                    <h1>OUR VIDEOS</h1>
+                        <p>Watch videos on our channel ,where<br>
+                            we fuse the world of technology <br>
+                            and coding to create the perfect <br>
+                            infotainment experience. 
+                           </p>
+                          
+                </div>
+                <a href="all_videos.html"><button>Click here</button></a>
+                </div>
+        
+        
+       
+        <div class="container">
+            <img src="/images/a-hacking.png" alt="">
+            <div class="content">
+                <h1>HACKING TOOLS</h1>
+                <p>
+                    Watch videos related to hacking & <br>
+                    Kali linux tutorials. Here you<br>
+                    can find hacking tools, pdf &<br>
+                    kali linux commands.
+                    
+                </p>
+                <a href="linux.html"><button>Click here</button></a>
+            </div>
+            </div>
+
+            <div class="container">
+                <img src="/images/a-products.png" alt="">
+                <div class="content">
+                    <h1>ALL PRODUCTS</h1>
+                    <p>
+                        We review amazing and daily use<br>
+                        products. here you can find the <br>
+                        link of the products<br>
+                    </p>
+                    <a href="product.html"><button>Click here</button></a>
+                </div>
+                </div>
+ 
+    </section>
+
+    <hr class="hr2">
+    <span class="Recommended-2"> Freelancing </span>
+
+
+    <a href="services.html" class="a-abouts"><section class="abouts">
+        <div class="abouts-div">
+            <img src="images/web-development-a.png" alt="" class="abouts-div-logo">
+            <p class="abouts-div-p">
+                <span style="color: #042727; font-size:17px;">Elevate Your Online Presence with a Webpage by Almighty!🌐</span><br>
+                <br>
+                Are you ready to unleash the full potential of your online presence?<br>
+                Look no further! With our technology and user-friendly platform, <br>
+                creating your very own customized webpage has never been easier.<br>
+
+            </p>
+        </div>
+
+        <div class="abouts-div">
+            <img src="images/app-development-a.png" alt="" class="abouts-div-logo">
+            <p class="abouts-div-p">
+                <span style="color: #042727; font-size:17px;">Unleash Your Creativity with Your Own App - by Almighty!📱</span> <br>
+                <br>
+                Are you ready to turn your innovative app idea into reality? <br>
+                 Look no further! With Almighty, crafting your very own customized <br>
+                  Android app has never been easier, more accessible, or more exciting. <br>
+
+            </p>
+        </div>
+
+    </section></a>
+    <a href="services.html" class="a-abouts"><section class="abouts-2" >
+        <div class="abouts-div-2">
+            <img src="images/ui-design-a.png" alt="" class="abouts-div-logo">
+            <p class="abouts-div-p">
+                <span style="color: #042727; font-size:17px;">Elevate Your UI/UX Design with Almighty! 🎨</span><br>
+                <br>
+
+                  Are you ready to captivate your audience with breathtaking design
+                  that tells your unique story? Look no further! With Almighty, 
+                  creating your own personalized UI/UX design has never been easier, 
+                  more intuitive, or more inspiring.
+                 
+            </p>
+        </div>
+
+        <div class="abouts-div-2">
+            <img src="images/hacker-a.png" alt="" class="abouts-div-logo">
+            <p class="abouts-div-p">
+                <span style="color: #042727; font-size:17px;"> Safeguard Your Digital World with Almighty! 🛡️</span> <br>
+                  <br>
+                Are you concerned about the security of your digital assets?<br>
+                Worried about potential hacking threats? Look no further!<br>
+                 With Almighty,resolving your hacking issues and fortifying <br>
+                 your online defenses has never been easier & more effective.<br>
+
+            </p>
+        </div>
+
+    </section></a>
+
+    <footer>
+        <ul class="footer-left-ul">
+            <img src="images/nav-logo.png" alt="">
+            <p class="p1">ALMIGHTY VERSE</p>
+            <p class="p2">Copyright © 2023 ALMIGHTY VERSE</p>
+        </ul>
+        <ul class="footer-right-ul">
+            <div><a href="https://github.com/Almighty-10"target="_blank"><img src="images/github.png" alt=""></a></div>
+            <div><a href="https://instagram.com/team.almightyverse"target="_blank"><img src="images/instagram.png" alt=""></a></div>
+            <div><a href="https://www.youtube.com/@AlmightyVerse"target="_blank"><img src="images/youtube.png" alt=""></a></div>
+            <div><a href="https://www.linkedin.com/in/ss-gamer-354b87271/"target="_blank"><img src="images/twitter.png" alt=""></a></div>
+        </ul>
+        
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: [
+                  'Content Creators',
+                  'Web Developers',
+                  'Android Developers',
+                  'Hacking',
+                  'Product Review'
+              ],
+        typeSpeed: 80,
+        loop: true, 
+      }); 
+  
+    </script>
+    
+</body>
+</html>
